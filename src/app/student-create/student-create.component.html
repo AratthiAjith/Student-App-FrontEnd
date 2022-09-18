@@ -1,0 +1,13 @@
+<h3>Student Register</h3> 
+<form (ngSubmit)="createStudent()"> 
+
+ Student Name : <input type="text" class="formcontrol" [(ngModel)]="student.stdName" name="stdName"/>  <br>
+ <br>
+Student Fee : <input type="text" class="formcontrol" [(ngModel)]="student.stdFee" name="stdFee"/>  <br><br>
+
+Student Course : <input type="text" class="formcontrol" [(ngModel)]="student.stdCourse" name="stdCourse"/>  <br><br>
+
+<input type="submit" value="Register" class="btn btn-success"/> <br><br>
+</form> 
+{{message.message}}
+
